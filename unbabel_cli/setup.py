@@ -7,8 +7,6 @@ setup(
 	install_requires=[
 		'click'
 	],
-	entry_points='''
-	[console_scripts]
-	unbabel_cli=unbabel_cli:parse_input
-	'''
+	entry_points={"console_scripts": ["unbabel_cli=unbabel_cli:main"]},
+	description='A cli app to calculate the moving average of translation delivery times'
 )
